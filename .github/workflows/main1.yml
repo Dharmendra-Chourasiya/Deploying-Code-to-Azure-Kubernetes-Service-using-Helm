@@ -1,0 +1,26 @@
+name: pr merge
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - master
+
+jobs:
+  test-transition-issue:
+    name: Transition merge
+    runs-on: ubuntu-latest
+    steps:
+    - name: Login
+      uses: atlassian/gajira-login@master
+      env:
+        JIRA_BASE_URL: ${{ secrets.JIRA_BASEURL }}
+        JIRA_USER_EMAIL: ${{ secrets.JIRA_USER }}
+        JIRA_API_TOKEN: ${{ secrets.JIRA_TOKEN }}
+
+    - name: Transition merged
+      uses: atlassian/gajira-transition@master
+      if: github.event.pull_request.merged == true
+      with:
+        issue: ${{ github.head_ref }}
+        transition: "In Review"

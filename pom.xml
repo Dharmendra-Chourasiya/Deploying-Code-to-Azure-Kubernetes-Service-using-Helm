@@ -4,7 +4,7 @@
   <artifactId>covid_vaccine</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/net.sourceforge.jdatepicker/jdatepicker -->
+  <!-- https://mvnrepository.com/artifact/net.sourceforge.jdatepicker/jdatepickers -->
  <dependency>
     <groupId>net.sourceforge.jdatepicker</groupId>
     <artifactId>jdatepicker</artifactId>

@@ -64,7 +64,7 @@ public class Covid_Vaccination extends Database {
 	}
 
 	/**
-	 * Initialize the contents of the frame.
+	 * Initialize the contents of the frames.
 	 */
 
 	String date, aadhar, phone, email, address;

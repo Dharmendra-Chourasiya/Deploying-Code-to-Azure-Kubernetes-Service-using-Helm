@@ -6,5 +6,6 @@ Class A{
       System.out.println("Hello- Utkarsh");
        System.out.println("Hello-UtkarshBajpai");
        System.out.println("Hello from sonarcloud");
+       ystem.out.println("Hello from sonarcloud");
 }
 }
